@@ -1,5 +1,5 @@
 const mostrarCard = (contenido)=> {
-    const {imagen, nombre, precio, tamaño} = contenido
+    const {id,imagen, nombre, precio, tamaño} = contenido
     return `<div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
@@ -8,9 +8,9 @@ const mostrarCard = (contenido)=> {
       <div class="flip-card-back">
         <img src="${imagen}" alt="${nombre}" style="width:100%">
         <h1>${nombre}</h1>
-        <p class="price">$${precio}</p>
-        <p>Tamaño: ${tamaño}</p>
-        <p><button>Añadir</button></p>
+        <span>$</span><span class="price">${precio}</span>
+        <p class="tamanio">${tamaño}</p>
+        <button class="btn-compra" id="${id}">Añadir</button>
       </div>
     </div>
   </div>

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LB Tienda</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/sweetalert2.css">
     <script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/sweetalert2.all.min.js"></script>
     <script defer src="./assets/js/tienda.js"></script>
     <script defer src="./assets/js/plantillas.js"></script>     
 </head>
@@ -21,12 +23,64 @@
         <a href="./index.html"><i class="fa-solid fa-circle-half-stroke"></i></a> 
         <a class="active" href="#"><i class="fa-solid fa-shop"></i></a>
         <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a> 
-      </div>      
+      </div>            
       <main>
         <h3 class="titulo-home txt-shadow" style="margin-top: 30px; font-size: 40px;">Tienda de Ilustraciones</h3>
         <section id="cards">
            
         </section>
+        <section id="carrito">
+          <section id="carro">
+            <div class="contenedor-card-carro" style="display: none;">
+                <img src="" class="thumb">
+                <div class="info-card-carro">
+                    <h6></h6>
+                    <p class="tamanio"></p>
+                    <p class="precio" style="font-size: 12px;"></p>
+                    <p></p>
+                    <div>
+                      <button class="btn-carro"><i class="fa-solid fa-plus btn-agregar"></i></button>
+                      <button class="btn-carro"><i class="fa-regular fa-trash-can btn-eliminar"></i></button>
+                    </div>                    
+                </div>
+              </div>                   
+          </section>
+          <div id="myModal" class="modal">
+            <section id="totales" class="contenido-modal">
+              <div id="cabecera-totales">
+                <h3 style="background-color: #40211A; color:#D9946C; font-size: 30px;">Resumen de Compra</h3>
+                <p style="border: 1px solid #40211A; margin: 20px 0; text-align: center;">Items</p>
+              </div>            
+              <div id="item-carrito" style="margin-top: 15px">
+                  <div id="totales-line">
+                      <p>Item</p>
+                      <p></p>
+                      <p></p>
+                      <p>0</p>
+                  </div>
+              </div>
+              <div id="subTotales" class="estilo-totales">
+                  <p>Sub Total</p>
+                  <p>$ 0</p>
+              </div>
+              <div id="iva" class="estilo-totales">
+                  <p>IVA (21%)</p>
+                  <p>$ 0</p>
+              </div>
+              <div id="precioFinal" class="estilo-totales">
+                  <p>TOTAL</p>
+                  <p>$ 0</p>
+              </div>
+              <div>
+                  <button id="btn-vaciar" class="btn-carrito">VACIAR CARRITO</button>
+                  <button class="btn-carrito"><a href="./carrito.html" style="text-decoration: none; color: #D9946C;">SEGUIR COMPRANDO</a></button>
+                  <button id="btn-finalizar" class="btn-carrito">FINALIZAR COMPRA</button>
+  
+              </div>
+            </section>
+          </div>
+          <button id="btn-vCarrito" class="btn-carrito" style="display: none;">VACIAR CARRITO</button>
+          <button id="open-modal" class="btn-carrito" style="display: none;">MOSTRAR RESUMEN DE COMPRA</button>        
       </main>      
 <script src="./assets/js/scroll.js"></script>
 </body>

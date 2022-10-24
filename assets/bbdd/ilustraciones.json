@@ -1,9 +1,9 @@
 [
-    {"id": "01", "nombre": "Ilustración Color Pequeña", "precio": 14.99, "tamaño": "500 x 500 megapíxeles", "imagen": "./assets/img/galeria_1.jpg"},
-    {"id": "02", "nombre": "Ilustración Color Mediana", "precio": 24.99, "tamaño": "800 x 800 megapíxeles", "imagen": "./assets/img/galeria_2.jpg"},
-    {"id": "03", "nombre": "Ilustración Color Grande", "precio": 49.99, "tamaño": "1200 x 1200 megapíxeles", "imagen": "./assets/img/galeria_3.jpg"},
+    {"id": "01", "nombre": "Ilustración Color Pequeña", "precio": 15, "tamaño": "500 x 500 megapíxeles", "imagen": "./assets/img/galeria_1.jpg"},
+    {"id": "02", "nombre": "Ilustración Color Mediana", "precio": 25, "tamaño": "800 x 800 megapíxeles", "imagen": "./assets/img/galeria_2.jpg"},
+    {"id": "03", "nombre": "Ilustración Color Grande", "precio": 50, "tamaño": "1200 x 1200 megapíxeles", "imagen": "./assets/img/galeria_3.jpg"},
 
-    {"id": "04", "nombre": "Ilustración B y N Pequeña", "precio": 6.99, "tamaño": "500 x 500 megapíxeles", "imagen": "./assets/img/galeria_4_byn.jpg"},
-    {"id": "05", "nombre": "Ilustración B y N Mediana", "precio": 14.99, "tamaño": "800 x 800 megapíxeles", "imagen": "./assets/img/galeria_5_byn.jpg"},
-    {"id": "06", "nombre": "Ilustración B y N Grande", "precio": 24.99, "tamaño": "1200 x 1200 megapíxeles", "imagen": "./assets/img/galeria_6_byn.jpg"}
+    {"id": "04", "nombre": "Ilustración B y N Pequeña", "precio": 7, "tamaño": "500 x 500 megapíxeles", "imagen": "./assets/img/galeria_4_byn.jpg"},
+    {"id": "05", "nombre": "Ilustración B y N Mediana", "precio": 15, "tamaño": "800 x 800 megapíxeles", "imagen": "./assets/img/galeria_5_byn.jpg"},
+    {"id": "06", "nombre": "Ilustración B y N Grande", "precio": 25, "tamaño": "1200 x 1200 megapíxeles", "imagen": "./assets/img/galeria_6_byn.jpg"}
 ]
