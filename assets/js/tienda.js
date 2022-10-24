@@ -95,12 +95,12 @@ const armarCarrito = objeto => {
   }
 
   if(carrito.hasOwnProperty(ilustracion.id)) {
-    ilustracion.cantidad = carrito[ilustracion.id].cantidad + 1
-    Toast.fire({
-      icon: 'success',
-      title: 'Ilustración Agregada'
-    })    
+    ilustracion.cantidad = carrito[ilustracion.id].cantidad + 1        
   }
+  Toast.fire({
+    icon: 'success',
+    title: 'Ilustración Agregada'
+  })
   carrito[ilustracion.id] = {...ilustracion}
   cargarCarrito()
   cargarTotalesLine()

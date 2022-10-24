@@ -11,6 +11,9 @@ body {
 h3 {
   text-align: center;
 }
+.swal2-popup {
+  font-size: 1.42em !important;
+}
 /* FUENTES */
 @font-face {
     font-family: 'Dancing';
