@@ -154,8 +154,34 @@ const cargarTotales = () => {
 
   const btnVaciar = document.getElementById('btn-vaciar')
   btnVaciar.addEventListener('click', () => {
-    vaciarCarrito()
-    modal.style.display= "none"
+    if (Object.values(carrito).length === 0) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'El Carrito ya está vacio',
+        confirmButtonColor: '#40211A'
+      })
+    } else {
+      Swal.fire({
+        title: 'Está Seguro?',
+      text: "Los items no podrán recuperarse!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#40211A',
+      cancelButtonColor: '#F27329',
+      confirmButtonText: 'Confirmar'
+      }).then((result) => {
+        if(result.isConfirmed) {
+          Swal.fire({
+            confirmButtonColor: '#40211A',
+          confirmButtonText:'OK',
+          title: 'Borrado!',
+          text: 'Su carrito está vacío.'
+          })
+          vaciarCarrito()
+          modal.style.display = "none"
+        }
+      })    
+    }
   })
 }
 
