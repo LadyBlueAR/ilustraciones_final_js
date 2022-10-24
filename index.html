@@ -1,132 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LB Ilustraciones Digitales</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="top-container">
-        <h1>Lady Blue</h1>
-        <p class="txt-shadow">Ilustraciones Digitales</p>
-      </div>      
-      <div class="icon-bar" id="myHeader">
-        <a class="active" href="#info"><i class="fa fa-home"></i></a> 
-        <a href="#galeria"><i class="fa-regular fa-image"></i></a> 
-        <a href="#comp"><i class="fa-solid fa-circle-half-stroke"></i></a> 
-        <a href="./tienda.html"><i class="fa-solid fa-shop"></i></a>
-        <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a> 
-      </div>      
-      <div class="content">
-        <section id="info">
-            <div class="tarjeta-home">
-                <h2 class="icono-home txt-shadow"><i class="fa-solid fa-paintbrush"></i></h2>
-                <h3 class="titulo-home">Ilustramos tus ideas</h3>
-                <p class="parrafo-home">Envianos toda la información detallada de la idea que tenes en mente, junto con algún archivo de ejemplo o boceto inicial e ilustraremos a medida aquello que imaginaste.</p>
-            </div>
-            <div class="tarjeta-home">
-                <h2 class="icono-home txt-shadow"><i class="fa-solid fa-palette"></i></h2>
-                <h3 class="titulo-home">Distintas Opciones</h3>
-                <p class="parrafo-home">Podés elegir entre una imágen blanco y negro o una completamente a color. También contamos con tres tipos de tamaños predefinidos o incluso puedes contactarte con nosotros para pedir una a tu medida. Las posibilidades son infinitas!
-                </p>
-            </div>
-            <div class="tarjeta-home">
-                <h2 class="icono-home txt-shadow"><i class="fa-regular fa-clock"></i></h2>
-                <h3 class="titulo-home">Tiempo de Entrega</h3>
-                <p class="parrafo-home">Dependiendo del tipo de imágen que eligas los tiempos de entrega podrán variar. Todo estará detallado en tu presupuesto final antes de realizar la compra
-                </p>
-            </div>
-        </section>       
-      </div>
-      
-      <section class="contenido-web">
-        <div id="galeria">
-          <h3 class="titulo-home txt-shadow">Galería de Ilustraciones</h3>
-          <div class="container">
-            <div class="mySlides">
-              <div class="numbertext">1 / 6</div>
-              <img src="./assets/img/galeria_1.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">2 / 6</div>
-              <img src="./assets/img/galeria_2.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">3 / 6</div>
-              <img src="./assets/img/galeria_3.jpg" style="width:100%">
-            </div>
-              
-            <div class="mySlides">
-              <div class="numbertext">4 / 6</div>
-              <img src="./assets/img/galeria_4.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">5 / 6</div>
-              <img src="./assets/img/galeria_5.jpg" style="width:100%">
-            </div>
-              
-            <div class="mySlides">
-              <div class="numbertext">6 / 6</div>
-              <img src="./assets/img/galeria_6.jpg" style="width:100%">
-            </div>
-              
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-          
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-          
-            <div class="row">
-              <div class="column">
-                <img class="demo cursor" src="./assets/img/galeria_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="El Viaje">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="./assets/img/galeria_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Fortaleza Flotante">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="./assets/img/galeria_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Castle Croix">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="./assets/img/galeria_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Oriente Invernal">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="./assets/img/galeria_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Dark City">
-              </div>    
-              <div class="column">
-                <img class="demo cursor" src="./assets/img/galeria_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="El Templo">
-              </div>
-            </div>
-          </div>
-        </div>
-          <div class="contenedor-comp">
-            <h3 class="titulo-home txt-shadow" style="font-size: 40px;">Color vs Blanco y Negro</h3>
-            <p class="txt-comp">Estás indeciso sobre si preferís tu ilustración en blanco y negro a color?. A continuación te dejamos un slide para que puedas comparar entre ambas y elegir tu favorita!</p>
-            <div id="comp">
-              <div class="img-comp-container">
-                  <div class="img-comp-img">
-                    <img src="./assets/img/comp.jpg" width="300" height="200">
-                  </div>
-                  <div class="img-comp-img img-comp-overlay">
-                    <img src="./assets/img/comp.jpg" width="300" height="200" style="-webkit-filter: grayscale(100%);
-                    filter: grayscale(100%);">
-                  </div>
-              </div>     
-            </div>     
-          <a href="./tienda.html"><button id="btn-tienda" class="txt-shadow">Ingresá a nuestra tienda &nbsp;<i class="fa-solid fa-shop"></i></button></a>
-      </section>      
-<script src="./assets/js/scroll.js"></script>
-<script src="./assets/js/image.js"></script>
-<script src="./assets/js/galeria.js"></script>
-<script>initComparisons();</script>     
-</body>
-<footer>
 
-</footer>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LB Ilustraciones Digitales</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="top-container">
+		<h1>Lady Blue</h1>
+		<p class="txt-shadow">Ilustraciones Digitales</p>
+	</div>
+	<!--Barra de Navegación-->
+	<div class="icon-bar" id="myHeader"> <a class="active" href="#info"><i class="fa fa-home"></i></a> <a href="#galeria"><i class="fa-regular fa-image"></i></a> <a href="./tienda.html"><i class="fa-solid fa-shop"></i></a> <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a> <a href="./contacto.html"><i class="fa-solid fa-envelope"></i></a> </div>
+	<div class="content">
+		<section id="info">
+			<!--Información Home-->
+			<div class="tarjeta-home">
+				<h2 class="icono-home txt-shadow"><i class="fa-solid fa-paintbrush"></i></h2>
+				<h3 class="titulo-home">Ilustramos tus ideas</h3>
+				<p class="parrafo-home">Envianos toda la información detallada de la idea que tenes en mente, junto con algún archivo de ejemplo o boceto inicial e ilustraremos a medida aquello que imaginaste.</p>
+			</div>
+			<div class="tarjeta-home">
+				<h2 class="icono-home txt-shadow"><i class="fa-solid fa-palette"></i></h2>
+				<h3 class="titulo-home">Distintas Opciones</h3>
+				<p class="parrafo-home">Podés elegir entre una imágen blanco y negro o una completamente a color. También contamos con tres tipos de tamaños predefinidos o incluso puedes contactarte con nosotros para pedir una a tu medida. Las posibilidades son infinitas! </p>
+			</div>
+			<div class="tarjeta-home">
+				<h2 class="icono-home txt-shadow"><i class="fa-regular fa-clock"></i></h2>
+				<h3 class="titulo-home">Tiempo de Entrega</h3>
+				<p class="parrafo-home">Dependiendo del tipo de imágen que elijas los tiempos de entrega podrán variar. Todo estará detallado en tu presupuesto final antes de realizar la compra </p>
+			</div>
+		</section>
+	</div>
+	<section class="contenido-web">
+		<div id="galeria">
+			<!--Slide de Galeria-->
+			<h3 class="titulo-home txt-shadow">Galería de Ilustraciones</h3>
+			<div class="container">
+				<div class="mySlides">
+					<div class="numbertext">1 / 6</div> <img src="./assets/img/galeria_1.jpg" style="width:100%"> </div>
+				<div class="mySlides">
+					<div class="numbertext">2 / 6</div> <img src="./assets/img/galeria_2.jpg" style="width:100%"> </div>
+				<div class="mySlides">
+					<div class="numbertext">3 / 6</div> <img src="./assets/img/galeria_3.jpg" style="width:100%"> </div>
+				<div class="mySlides">
+					<div class="numbertext">4 / 6</div> <img src="./assets/img/galeria_4.jpg" style="width:100%"> </div>
+				<div class="mySlides">
+					<div class="numbertext">5 / 6</div> <img src="./assets/img/galeria_5.jpg" style="width:100%"> </div>
+				<div class="mySlides">
+					<div class="numbertext">6 / 6</div> <img src="./assets/img/galeria_6.jpg" style="width:100%"> </div> <a class="prev" onclick="plusSlides(-1)">❮</a> <a class="next" onclick="plusSlides(1)">❯</a>
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+				<div class="row">
+					<div class="column"> <img class="demo cursor" src="./assets/img/galeria_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="El Viaje"> </div>
+					<div class="column"> <img class="demo cursor" src="./assets/img/galeria_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Fortaleza Flotante"> </div>
+					<div class="column"> <img class="demo cursor" src="./assets/img/galeria_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Castle Croix"> </div>
+					<div class="column"> <img class="demo cursor" src="./assets/img/galeria_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Oriente Invernal"> </div>
+					<div class="column"> <img class="demo cursor" src="./assets/img/galeria_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Dark City"> </div>
+					<div class="column"> <img class="demo cursor" src="./assets/img/galeria_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="El Templo"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="contenedor-comp">
+			<!--Slide de Comparación-->
+			<h3 class="titulo-home txt-shadow" style="font-size: 40px;">Color vs Blanco y Negro</h3>
+			<p class="txt-comp">Estás indeciso sobre si preferís tu ilustración en blanco y negro a color?. A continuación te dejamos un slide para que puedas comparar entre ambas y elegir tu favorita!</p>
+			<div id="comp">
+				<div class="img-comp-container">
+					<div class="img-comp-img"> <img src="./assets/img/comp.jpg" width="300" height="200"> </div>
+					<div class="img-comp-img img-comp-overlay"> <img src="./assets/img/comp.jpg" width="300" height="200" style="-webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);"> </div>
+				</div>
+			</div>
+			<a href="./tienda.html">
+				<button id="btn-tienda" class="txt-shadow">Ingresá a nuestra tienda &nbsp;<i class="fa-solid fa-shop"></i></button>
+			</a>
+	</section>
+	<footer>
+		<p>Autor: Anabela Gemignani
+			<br> Copyright © 2022</p>
+	</footer>
+	<script src="./assets/js/scroll.js"></script>
+	<script src="./assets/js/image.js"></script>
+	<script src="./assets/js/galeria.js"></script>
+	<script>
+	initComparisons();
+	</script>
+</body>
+<footer> </footer>
+
 </html>
